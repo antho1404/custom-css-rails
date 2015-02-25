@@ -1,0 +1,6 @@
+<%= form_for @customization do |f| %>
+  <% setting_field f, 'bg-color' %>
+  <% setting_field f, 'input-padding' %>
+  <%= render_settings f %>
+  <%= f.submit %>
+<% end %>
